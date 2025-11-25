@@ -232,6 +232,7 @@ body {
   .heading--lg { font-size: 1.06rem; }
   .hero { flex-direction: column; }
   .hero__media { margin-top: var(--space-1);}
+
 }
 /* Center everything in section and container */
 .section, .container, .section_header, .herocontent, .hero_media {
