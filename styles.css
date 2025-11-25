@@ -233,3 +233,49 @@ body {
   .hero { flex-direction: column; }
   .hero__media { margin-top: var(--space-1);}
 }
+/* Center everything in section and container */
+.section, .container, .section_header, .herocontent, .hero_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* For mobile, remove left/right extra spaces and stack content */
+@media (max-width: 600px) {
+  body, .container, .section, .section--hero, .section--alt {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100vw !important;
+    box-sizing: border-box;
+  }
+  .hero, .grid--2 {
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    align-items: center !important;
+  }
+  .hero_img, .about_img {
+    margin: 0 auto;
+    display: block;
+    max-width: 90vw;
+    width: 100%;
+  }
+}
+
+/* Center navigation links on mobile */
+@media (max-width: 600px) {
+  .nav__menu {
+    justify-content: center !important;
+    width: 100%;
+  }
+}
+
+/* Center the call-to-action button and any lists */
+.hero__cta, .service-list, .about-list, .contact-info {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
